@@ -4,7 +4,8 @@
   "scripts": {
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
-    "test": "htmlhint && prettier --check . && npm run stylelint"
+    "test": "htmlhint && prettier --check . && npm run stylelint",
+    "start": "live-server --no-css-inject --port=4000"
   },
   "keywords": [],
   "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de)",
@@ -21,8 +22,10 @@
   "description": "",
   "devDependencies": {
     "htmlhint": "^0.14.2",
+    "live-server": "^1.2.1",
     "prettier": "2.2.1",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0"
-  }
+  },
+  "dependencies": {}
 }
