@@ -1,0 +1,10 @@
+.navigation {
+  background-color: coral;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.navigation a {
+  border: 4px solid cornflowerblue;
+}
