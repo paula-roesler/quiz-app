@@ -1,6 +1,6 @@
 .questions {
   width: 80%;
-  margin: auto;
+  margin: 30px auto;
   background-color: ivory;
   text-align: center;
   box-shadow: 2px 2px 2px 1px rgba(217, 217, 215, 0.75);
@@ -8,12 +8,13 @@
   -moz-box-shadow: 2px 2px 2px 1px rgba(217, 217, 215, 0.75);
 }
 .questions__title {
-  color: tomato;
+  background-color: #555;
+  color: #fcfcfc;
   text-transform: none;
-}
-
-.questions__title::before {
-  content: 'Q: ';
+  font-size: 0.85em;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  padding: 15px;
 }
 
 .questions__tags ul {
