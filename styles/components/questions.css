@@ -1,0 +1,18 @@
+.questions {
+  text-align: center;
+}
+.questions__title {
+  color: tomato;
+  text-transform: none;
+}
+
+.questions__tags > li {
+  list-style: none;
+  display: inline-block;
+  background-color: tomato;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.questions__answer {
+}
