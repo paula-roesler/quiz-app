@@ -8,3 +8,8 @@
 .navigation a {
   border: 4px solid cornflowerblue;
 }
+
+.fas .fa-user {
+  color: black;
+  font-size: 30px;
+}
