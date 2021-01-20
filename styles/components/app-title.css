@@ -8,6 +8,7 @@
 }
 
 .app-title__headline {
-  font-size: 30px;
+  font-size: 33px;
+  letter-spacing: 0.4em;
   margin: 13px 0;
 }
