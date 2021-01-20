@@ -1,0 +1,12 @@
+.app-title {
+  color: tomato;
+  background-color: ivory;
+  text-align: center;
+  box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
+  -webkit-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
+  -moz-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
+}
+
+.app-title__headline {
+  margin: 10px 0;
+}

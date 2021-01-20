@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles/index.css" />
+    <link href="/fonts/css/all.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="app-grid">
-    <header class="app-grid__header">
-      <h1>My Quiz App</h1>
+    <header class="app-grid__header app-title">
+      <h1 class="app-title__headline">Quiz App</h1>
     </header>
     <main class="app-grid__main"></main>
-    <footer>
-      <nav class="app-grid__nav"></nav>
+    <footer class="app-grid__footer">
+      <nav class="navigation">
+        <a href="">
+          <i class="fas fa-home"></i><br />
+          <span class="navigation__item">Home</span>
+        </a>
+        <a href="">
+          <i class="far fa-bookmark"></i><br />
+          <span class="navigation__item">Bookmarks</span>
+        </a>
+        <a href="">
+          <i class="fas fa-sliders-h"></i><br />
+          <span class="navigation__item">Settings</span>
+        </a>
+        <a href="">
+          <i class="fas fa-user"></i><br />
+          <span class="navigation__item">Profile</span>
+        </a>
+      </nav>
     </footer>
   </body>
 </html>
