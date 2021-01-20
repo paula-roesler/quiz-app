@@ -1,17 +1,29 @@
 .questions {
+  width: 80%;
+  margin: auto;
   text-align: center;
+  box-shadow: 2px 2px 2px 1px rgba(217, 217, 215, 0.75);
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(217, 217, 215, 0.75);
+  -moz-box-shadow: 2px 2px 2px 1px rgba(217, 217, 215, 0.75);
 }
 .questions__title {
   color: tomato;
   text-transform: none;
 }
 
+.questions__tags ul {
+  padding-left: none;
+}
 .questions__tags > li {
   list-style: none;
   display: inline-block;
-  background-color: tomato;
+  background-color: rgba(255, 99, 71, 0.4);
+  color: #444;
+  font-size: 0.6em;
   padding: 5px 10px;
   margin: 5px;
+  border-radius: 3px;
+  padding: 10px 30px;
 }
 
 .questions__answer {
