@@ -1,8 +1,8 @@
 import '../styles/index.css'
-import './navigation.css'
-import html from './navigation.html'
+import './app-title.css'
+import html from './app-title.html'
 export default {
-  title: 'Navigation',
+  title: 'App Title',
   component: html,
 }
 export const base = () => html

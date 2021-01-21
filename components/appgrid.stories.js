@@ -1,8 +1,8 @@
 import '../styles/index.css'
-import './navigation.css'
-import html from './navigation.html'
+import './app-grid.css'
+import html from './app-grid.html'
 export default {
-  title: 'Navigation',
+  title: 'App Grid',
   component: html,
 }
 export const base = () => html
