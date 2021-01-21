@@ -1,4 +1,3 @@
-import '../styles/index.css'
 import './app-title.css'
 import html from './app-title.html'
 
