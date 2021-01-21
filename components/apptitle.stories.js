@@ -5,4 +5,5 @@ export default {
   title: 'App Title',
   component: html,
 }
+
 export const base = () => html
