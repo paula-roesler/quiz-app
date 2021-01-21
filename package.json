@@ -5,28 +5,37 @@
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
     "test": "htmlhint && prettier --check . && npm run stylelint",
-    "start": "live-server --no-css-inject --port=4000"
+    "start": "live-server --no-css-inject --port=4000",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
-  "author": "Jeremias Erbs <jerry@badabam.de> (https://badabam.de)",
+  "author": "Paula Rösler <paularoesler@icloud.com> (https://paularoesler.vercel.app/)",
   "license": "ISC",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badabam/quiz-app.git"
+    "url": "git+https://github.com/paula-roesler/quiz-app"
   },
   "bugs": {
-    "url": "https://github.com/badabam/quiz-app/issues"
+    "url": "https://github.com/paula-roesler/quiz-app/issues"
   },
-  "homepage": "https://github.com/badabam/quiz-app#readme",
+  "homepage": "https://github.com/paula-roesler/quiz-app#readme",
   "description": "",
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/html": "^6.1.14",
+    "babel-loader": "^8.2.2",
     "htmlhint": "^0.14.2",
     "live-server": "^1.2.1",
     "prettier": "2.2.1",
     "stylelint": "^13.8.0",
-    "stylelint-config-standard": "^20.0.0",
-    "@fortawesome/fontawesome-free": "^5.15.2"
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0"
   },
   "dependencies": {}
 }
