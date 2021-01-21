@@ -4,7 +4,6 @@
   margin: 30px auto;
   padding-bottom: 15px;
   background-color: rgba(171, 168, 168, 0.5);
-  text-align: center;
   box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
   -webkit-box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
   -moz-box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
@@ -20,13 +19,10 @@
 }
 
 .questions__title {
-  background-color: #555;
-  color: #fcfcfc;
-  text-transform: none;
   font-size: 0.85em;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  padding: 30px 15px 25px;
+  padding: 10% 15% 10% 10%;
+  letter-spacing: 0.05em;
+  color: #444;
 }
 
 .questions__title::before {
