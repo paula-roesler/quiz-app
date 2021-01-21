@@ -1,14 +1,15 @@
-.app-title {
-  color: tomato;
+.app-title__header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
   background-color: ivory;
-  text-align: center;
   box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
   -webkit-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
   -moz-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
 }
 
-.app-title__headline {
+.app-title__title {
+  color: tomato;
   font-size: 33px;
   letter-spacing: 0.4em;
-  margin: 13px 0;
 }
