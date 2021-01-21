@@ -1,9 +1,9 @@
-.questions {
+.questions__card {
   position: relative;
   width: 80%;
   margin: 30px auto;
   padding-bottom: 15px;
-  background-color: rgb(171, 168, 168);
+  background-color: rgba(171, 168, 168, 0.5);
   text-align: center;
   box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
   -webkit-box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
