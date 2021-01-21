@@ -1,11 +1,39 @@
-<header class="app-grid__header app-title create__title">
-  <h1 class="app-title__headline">Create</h1>
+<header class="app-title__header">
+  <h1 class="app-title__title">Create</h1>
 </header>
+
 <main class="app-grid__main">
-  <section class="create__form">
-    <form action="">
-      <p>Add Question</p>
-      <input type="text" />
-    </form>
-  </section>
+  <form action="" class="create__form">
+    <label for="question" class="create__form__question">
+      Your Question goes here:</label
+    >
+    <textarea
+      name=""
+      id="question"
+      cols="30"
+      rows="10"
+      class="create__form__input"
+      required="required"
+    ></textarea>
+    <label for="answer" class="create__form__question">
+      Your answer goes here:</label
+    >
+    <textarea
+      name=""
+      id="answer"
+      cols="30"
+      rows="10"
+      class="create__form__input"
+      required="required"
+    ></textarea>
+    <label for="tags" class="create__form__question">
+      Insert your tags (separated with comma) here:</label
+    >
+    <input
+      name=""
+      id="tags"
+      class="create__form__input"
+    ></input>
+    <button class="create__form__submit">Submit</button>
+  </form>
 </main>
