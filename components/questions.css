@@ -2,67 +2,88 @@
   position: relative;
   width: 80%;
   margin: 30px auto;
-  padding-bottom: 15px;
-  background-color: rgba(171, 168, 168, 0.5);
-  text-align: center;
+  padding-bottom: 10px;
+  background-color: rgba(171, 168, 168, 0.43);
   box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
   -webkit-box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
   -moz-box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
 }
 
 .questions__bookmark {
-  color: rgb(240, 119, 98);
-  position: absolute;
+  height: 30px;
   overflow: hidden;
-  top: -8px;
-  right: 15px;
-  font-size: 30px;
+  position: absolute;
+  width: 0;
+  top: -6px;
+  right: 17px;
+  border: 12px solid rgb(240, 119, 98);
+  border-radius: 3px;
+  border-bottom-color: transparent;
+  padding: 0;
+  background-color: transparent;
 }
 
-.questions__title {
-  background-color: #555;
-  color: #fcfcfc;
-  text-transform: none;
-  font-size: 0.85em;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-  padding: 30px 15px 25px;
-}
-
-.questions__title::before {
+.questions__question::before {
   content: 'Q: ';
+  color: rgb(223, 74, 28);
+  padding-right: 10px;
 }
 
+.questions__question {
+  font-size: 16px;
+  padding: 13% 10% 7% 10%;
+  letter-spacing: 0.05em;
+  color: #444;
+  background-color: rgba(171, 168, 168, 0.43);
+}
+
+.questions__answer {
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: #444;
+  padding-left: 10px;
+}
+
+summary::marker {
+  margin: 12px 0;
+  color: rgb(223, 74, 28);
+  content: 'A: ';
+  font-size: 16px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+summary::before {
+  font-family: 'Varela Round', sans-serif;
+  content: 'Tap for answer';
+  font-size: 16px;
+  color: #444;
+}
+
+summary::before[open] {
+  content: 'Tap for closing';
+  color: green;
+}
+
+details {
+  padding: 3% 15% 3% 10%;
+  font-size: 16px;
+  color: #444;
+}
 .questions__tags {
   margin: 0;
-  padding: 0 20px;
+  padding: 3% 2% 0% 10%;
 }
 
 .questions__tags > li {
   list-style: none;
   display: inline-block;
-  color: ivory;
-  padding: 3px 7px;
-  margin: 5px;
+  padding: 3px 2px;
   font-size: 0.7em;
   letter-spacing: 0.05em;
-  background-color: #777;
 }
 
-.questions__answer details {
-  font-size: 0.8em;
-  line-height: 1.3;
-  color: #444;
-  padding: 0 30px 20px 30px;
-}
-
-.questions__answer {
-  color: #444;
-  text-transform: none;
-  font-weight: 300;
-  letter-spacing: 0.08em;
-}
-
-.questions__answer h3 {
-  display: inline;
+.questions__tags > li::before {
+  content: '#';
+  padding-right: 1px;
 }
