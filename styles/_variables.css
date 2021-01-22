@@ -1,6 +1,6 @@
 /* Farben in CSS als Variablen anlegen */
 :root {
-  --color-orange: rgb(240, 119, 98);
+  --color-orange: rgb(249, 101, 75);
   --color-orange_dark: rgb(223, 74, 28);
   --color-light: ivory;
 }
