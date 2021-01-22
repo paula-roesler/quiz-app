@@ -1,0 +1,23 @@
+.profile__about {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'profile__pic profile__name'
+    'profile__desc profile__desc';
+  gap: 30px;
+}
+
+.profile__pic {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/*
+
+.profile__tags {}
+.profile__tags__item {}
+
+.profile__logout_button {}
+
+*/
