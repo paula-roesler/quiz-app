@@ -3,7 +3,7 @@
   width: 80%;
   margin: 30px auto;
   padding-bottom: 10px;
-  background-color: rgba(171, 168, 168, 0.43);
+  background-color: rgba(171, 168, 168, 0.3);
   box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
   -webkit-box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
   -moz-box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
@@ -34,7 +34,7 @@
   padding: 13% 10% 7% 10%;
   letter-spacing: 0.05em;
   color: #444;
-  background-color: rgba(171, 168, 168, 0.43);
+  background-color: rgba(171, 168, 168, 0.3);
 }
 
 .questions__answer {
@@ -46,22 +46,18 @@
 }
 
 summary::marker {
-  margin: 12px 0;
   color: rgb(223, 74, 28);
-  content: 'A: ';
-  font-size: 16px;
-  font-family: 'Varela Round', sans-serif;
 }
 
 summary::before {
   font-family: 'Varela Round', sans-serif;
-  content: 'Tap for answer';
+  content: 'Show answer';
   font-size: 16px;
   color: #444;
 }
 
 summary::before[open] {
-  content: 'Tap for closing';
+  content: 'Hide answer';
   color: green;
 }
 
@@ -70,12 +66,13 @@ details {
   font-size: 16px;
   color: #444;
 }
+
 .questions__tags {
   margin: 0;
   padding: 3% 2% 0% 10%;
 }
 
-.questions__tags > li {
+.questions__tags__item {
   list-style: none;
   display: inline-block;
   padding: 3px 2px;
@@ -83,7 +80,7 @@ details {
   letter-spacing: 0.05em;
 }
 
-.questions__tags > li::before {
+.questions__tags__item::before {
   content: '#';
   padding-right: 1px;
 }
