@@ -1,10 +1,6 @@
 .profile__about {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    'profile__pic profile__name'
-    'profile__desc profile__desc';
   gap: 30px;
 }
 
