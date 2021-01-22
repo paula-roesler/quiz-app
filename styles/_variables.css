@@ -1,0 +1,14 @@
+/* Farben in CSS als Variablen anlegen */
+:root {
+  --color-orange: rgb(249, 101, 75);
+  --color-orange_dark: rgb(223, 74, 28);
+  --color-light: ivory;
+}
+/* so wird es dann angewendet 
+.test {
+  color: var(--color-orange);
+}
+*/
+
+/* Alternatives Beispiel für die Benennung: primary, secondary, highlight */
+/* PROFI-TIPP END --------------------------------- */

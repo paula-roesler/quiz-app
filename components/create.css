@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: tomato;
+  background-color: var(--color-orange);
   color: ivory;
   border: none;
   letter-spacing: 0.06em;
