@@ -1,7 +1,6 @@
 @import '_base.css';
 @import '_variables.css';
 @import '../components/app-grid.css';
-@import '../components/home.css';
 @import '../components/app-title.css';
 @import '../components/navigation.css';
 @import '../components/questions.css';

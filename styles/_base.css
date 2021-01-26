@@ -10,13 +10,14 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 auto;
   color: #888;
   background-color: rgba(222, 218, 205, 0.2);
+  max-width: 375px;
 }
 
 main {
-  padding: 30px;
+  padding: 10px 20px 30px;
   overflow: scroll;
 }
 
