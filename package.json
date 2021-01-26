@@ -5,7 +5,8 @@
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
     "test": "htmlhint && prettier --check . && npm run stylelint",
-    "start": "live-server --no-css-inject --port=4000",
+    "start": "snowpack dev",
+    "build": "snowpack build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -31,8 +32,8 @@
     "@storybook/html": "^6.1.14",
     "babel-loader": "^8.2.2",
     "htmlhint": "^0.14.2",
-    "live-server": "^1.2.1",
     "prettier": "2.2.1",
+    "snowpack": "^3.0.11",
     "stylelint": "^13.8.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"
