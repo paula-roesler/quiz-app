@@ -11,8 +11,7 @@ body {
   font-size: 112.5%;
   line-height: 1.5;
   margin: 0 auto;
-  color: #888;
-  background-color: rgba(222, 218, 205, 0.2);
+  color: #222;
   max-width: 375px;
 }
 

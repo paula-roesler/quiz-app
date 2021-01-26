@@ -1,13 +1,13 @@
 .navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
   position: fixed;
   bottom: 0;
   width: 100%;
   max-width: 375px;
-  background-color: var(--color-orange);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  padding-top: 20px;
+  padding: 20px 0 10px;
+  background-color: var(--color-fireopal);
 }
 
 .navigation__icon {
@@ -23,12 +23,12 @@
 
 .navigation__link {
   text-align: center;
-  color: ivory;
+  color: var(--color-honeydew-light);
   text-decoration: none;
 }
 
-.navigation__link:active {
+.navigation__link-aktive {
   text-align: center;
-  color: rgba(255, 255, 240, 0.3);
+  color: var(--color-independence-dark);
   text-decoration: none;
 }

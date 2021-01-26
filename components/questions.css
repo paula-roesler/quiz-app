@@ -3,10 +3,10 @@
   width: 100%;
   margin: 30px auto;
   padding-bottom: 10px;
-  background-color: rgba(171, 168, 168, 0.3);
-  box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
-  -webkit-box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
-  -moz-box-shadow: 10px 10px 37px -6px rgba(217, 217, 215, 0.75);
+  background-color: var(--color-independence);
+  box-shadow: 10px 10px 3px -6px rgba(217, 217, 215, 0.4);
+  -webkit-box-shadow: 10px 10px 3px -6px rgba(217, 217, 215, 0.4);
+  -moz-box-shadow: 10px 10px 3px -6px rgba(217, 217, 215, 0.4);
 }
 
 .questions__bookmark {
@@ -16,7 +16,7 @@
   width: 0;
   top: -6px;
   right: 17px;
-  border: 12px solid var(--color-orange);
+  border: 12px solid var(--color-fireopal);
   border-radius: 3px;
   border-bottom-color: transparent;
   padding: 0;
@@ -25,51 +25,48 @@
 
 .questions__question::before {
   content: 'Q: ';
-  color: var(--color-orange_dark);
   padding-right: 10px;
+  color: var(--color-independence);
 }
 
 .questions__question {
   font-size: 16px;
   padding: 13% 10% 7% 10%;
   letter-spacing: 0.05em;
-  color: #444;
-  background-color: rgba(171, 168, 168, 0.3);
+  color: var(--color-independence);
+  background-color: var(--color-eggshell);
 }
 
 .questions__answer {
   display: inline-block;
   font-size: 16px;
   letter-spacing: 0.05em;
-  color: #444;
+  color: var(--color-honeydew);
   padding-left: 10px;
+  background-color: var(--color-independence);
 }
 
 summary::marker {
-  color: var(--color-orange_dark);
+  color: var(--color-honeydew);
 }
 
 summary::before {
   font-family: 'Varela Round', sans-serif;
   content: 'Show answer';
   font-size: 16px;
-  color: #444;
-}
-
-summary::before[open] {
-  content: 'Hide answer';
-  color: green;
+  color: var(--color-honeydew);
 }
 
 details {
   padding: 3% 15% 3% 10%;
   font-size: 16px;
-  color: #444;
+  color: var(--color-honeydew);
 }
 
 .questions__tags {
   margin: 0;
   padding: 3% 2% 0% 10%;
+  color: var(--color-honeydew);
 }
 
 .questions__tags__item {

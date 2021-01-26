@@ -1,14 +1,9 @@
-/* Farben in CSS als Variablen anlegen */
 :root {
-  --color-orange-light: rgb(247, 142, 123);
-  --color-orange: rgb(245, 112, 89);
-  --color-light: ivory;
+  --color-fireopal: #db5a42;
+  --color-honeydew: #e9fae3;
+  --color-honeydew-light: #eef8ea;
+  --color-eggshell: #f0ebd8;
+  --color-bluebell: #a09abc;
+  --color-independence: #474056;
+  --color-independence-dark: #2d253f;
 }
-/* so wird es dann angewendet 
-.test {
-  color: var(--color-orange);
-}
-*/
-
-/* Alternatives Beispiel für die Benennung: primary, secondary, highlight */
-/* PROFI-TIPP END --------------------------------- */

@@ -1,5 +1,5 @@
 .app-title__header {
-  background-color: ivory;
+  background-color: var(--color-fireopal);
   box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
   -webkit-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
   -moz-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
@@ -9,7 +9,7 @@
 }
 
 .app-title__title {
-  color: tomato;
+  color: var(--color-honeydew-light);
   font-size: 25px;
   letter-spacing: 0.2em;
 }
