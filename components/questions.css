@@ -50,7 +50,7 @@ summary::marker {
   color: var(--color-honeydew);
 }
 
-summary::before {
+summary {
   font-family: 'Varela Round', sans-serif;
   content: 'Show answer';
   font-size: 16px;
