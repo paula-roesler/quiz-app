@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link href="/fonts/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link href="./styles/fonts/css/all.css" rel="stylesheet" />
     <script defer type="module" src="./js/index.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -14,82 +14,179 @@
     />
   </head>
   <body class="app-grid">
-    <header class="app-title__header">
-      <h1 class="app-title__title">Quizzz</h1>
-    </header>
-    <main class="app-grid__main">
-      <section class="questions__card">
-        <button class="questions__bookmark"></button>
-        <h2 class="questions__question">
-          What is the population of New Orleans?
-        </h2>
-        <details>
-          <summary role="button" class="questions__answerbutton">
-            Show Answer
-          </summary>
-          According to 2010 Census Bureau estimates, New Orleans' population is
-          made up of approximately 343,829 residents.
-        </details>
-        <ul class="questions__tags">
-          <li class="questions__tags__item">Geography</li>
-          <li class="questions__tags__item">Cities</li>
-          <li class="questions__tags__item">USA</li>
-          <li class="questions__tags__item">General</li>
+    <section hidden data-js="home" class="home">
+      <header class="app-title__header">
+        <h1 class="app-title__title">Quizzz</h1>
+      </header>
+      <main class="app-grid__main">
+        <section class="questions__card">
+          <button class="questions__bookmark"></button>
+          <h2 class="questions__question">
+            What is the population of New Orleans?
+          </h2>
+          <details>
+            <summary role="button" class="questions__answerbutton">
+              Show Answer
+            </summary>
+            According to 2010 Census Bureau estimates, New Orleans' population
+            is made up of approximately 343,829 residents.
+          </details>
+          <ul class="questions__tags">
+            <li class="questions__tags__item">Geography</li>
+            <li class="questions__tags__item">Cities</li>
+            <li class="questions__tags__item">USA</li>
+            <li class="questions__tags__item">General</li>
+          </ul>
+        </section>
+        <section class="questions__card">
+          <button class="questions__bookmark"></button>
+          <h2 class="questions__question">
+            What is the population of New Orleans?
+          </h2>
+          <details>
+            <summary>Show Answer</summary>
+            According to 2010 Census Bureau estimates, New Orleans' population
+            is made up of approximately 343,829 residents.
+          </details>
+          <ul class="questions__tags">
+            <li class="questions__tags__item">Geography</li>
+            <li class="questions__tags__item">Cities</li>
+            <li class="questions__tags__item">USA</li>
+            <li class="questions__tags__item">General</li>
+          </ul>
+        </section>
+        <section class="questions__card">
+          <button class="questions__bookmark"></button>
+          <h2 class="questions__question">
+            What is the population of New Orleans?
+          </h2>
+          <details>
+            <summary>Show Answer</summary>
+            According to 2010 Census Bureau estimates, New Orleans' population
+            is made up of approximately 343,829 residents.
+          </details>
+          <ul class="questions__tags">
+            <li class="questions__tags__item">Geography</li>
+            <li class="questions__tags__item">Cities</li>
+            <li class="questions__tags__item">USA</li>
+            <li class="questions__tags__item">General</li>
+          </ul>
+        </section>
+      </main>
+    </section>
+    <section hidden data-js="bookmarks"  class="bookmarks">
+      <header class="app-title__header">
+        <h1 class="app-title__title">Bookmark</h1>
+      </header>
+      <main class="app-grid__main">
+        <section class="questions__card">
+          <button class="questions__bookmark"></button>
+          <h2 class="questions__question">
+            What is the population of New Orleans?
+          </h2>
+          <details>
+            <summary></summary>
+            According to 2010 Census Bureau estimates, New Orleans' population
+            is made up of approximately 343,829 residents.
+          </details>
+          <ul class="questions__tags">
+            <li class="questions__tags__item">Geography</li>
+            <li class="questions__tags__item">Cities</li>
+            <li class="questions__tags__item">USA</li>
+            <li class="questions__tags__item">General</li>
+          </ul>
+        </section>
+        <section class="questions__card">
+          <button class="questions__bookmark"></button>
+          <h2 class="questions__question">
+            What is the population of New Orleans?
+          </h2>
+          <details>
+            <summary></summary>
+            According to 2010 Census Bureau estimates, New Orleans' population
+            is made up of approximately 343,829 residents.
+          </details>
+          <ul class="questions__tags">
+            <li class="questions__tags__item">Geography</li>
+            <li class="questions__tags__item">Cities</li>
+            <li class="questions__tags__item">USA</li>
+            <li class="questions__tags__item">General</li>
+          </ul>
+        </section>
+      </main>
+    </section>
+    <section hidden data-js="create"  class="create">
+      <header class="app-title__header">
+        <h1 class="app-title__title">Create</h1>
+      </header>
+      <main class="app-grid__main">
+        <form action="" class="create__form">
+          <label for="question" class="create__form__question">
+            Your Question goes here:</label
+          >
+          <textarea
+            name=""
+            id="question"
+            cols="30"
+            rows="10"
+            class="create__form__input"
+            required="required"
+          ></textarea>
+          <label for="answer" class="create__form__question">
+            Your answer goes here:</label
+          >
+          <textarea
+            name=""
+            id="answer"
+            cols="30"
+            rows="10"
+            class="create__form__input"
+            required="required"
+          ></textarea>
+          <label for="tags" class="create__form__question">
+            Insert your tags (separated with comma) here:</label
+          >
+          <input
+            name=""
+            id="tags"
+            class="create__form__input"
+          ></input>
+          <button class="create__form__submit">Submit</button>
+        </form>
+      </main>
+    </section>
+    <section hidden data-js="profil"  class="profil">
+      <header class="app-title__header">
+        <h1 class="app-title__title">Quizzz</h1>
+      </header>
+      <main>
+        <section class="profile__about">
+          <img class="profile__pic" src="../images/profilpic.jpg" alt="" />
+          <h2 class="profile__name">My Name</h2>
+        </section>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aperiam
+          debitis doloribus quas esse sapiente fugit, commodi id enim explicabo
+          accusantium veritatis unde quia sint sequi beatae asperiores consequatur
+          nostrum!
+        </p>
+        <h3>My Skills</h3>
+        <ul class="profile__tags">
+          <li class="profile__tags__item">tag</li>
+          <li class="profile__tags__item">tag</li>
+          <li class="profile__tags__item">tag</li>
+          <li class="profile__tags__item">tag</li>
+          <li class="profile__tags__item">tag</li>
         </ul>
-      </section>
-      <section class="questions__card">
-        <button class="questions__bookmark"></button>
-        <h2 class="questions__question">
-          What is the population of New Orleans?
-        </h2>
-        <details>
-          <summary>Show Answer</summary>
-          According to 2010 Census Bureau estimates, New Orleans' population is
-          made up of approximately 343,829 residents.
-        </details>
-        <ul class="questions__tags">
-          <li class="questions__tags__item">Geography</li>
-          <li class="questions__tags__item">Cities</li>
-          <li class="questions__tags__item">USA</li>
-          <li class="questions__tags__item">General</li>
-        </ul>
-      </section>
-      <section class="questions__card">
-        <button class="questions__bookmark"></button>
-        <h2 class="questions__question">
-          What is the population of New Orleans?
-        </h2>
-        <details>
-          <summary>Show Answer</summary>
-          According to 2010 Census Bureau estimates, New Orleans' population is
-          made up of approximately 343,829 residents.
-        </details>
-        <ul class="questions__tags">
-          <li class="questions__tags__item">Geography</li>
-          <li class="questions__tags__item">Cities</li>
-          <li class="questions__tags__item">USA</li>
-          <li class="questions__tags__item">General</li>
-        </ul>
-      </section>
-    </main>
+        <button class="profile__logout_button">Logout</button>
+      </main>
+    </section>
     <footer class="app-grid__footer">
-      <nav class="navigation">
-        <a href="index.html" class="navigation__link-aktive">
-          <i class="fas fa-home navigation__icon"></i><br />
-          <span class="navigation__item">Home</span>
-        </a>
-        <a href="bookmarks.html" class="navigation__link">
-          <i class="fas fa-bookmark navigation__icon"></i><br />
-          <span class="navigation__item">Bookmarks</span>
-        </a>
-        <a href="create.html" class="navigation__link">
-          <i class="fas fa-pen navigation__icon"></i><br />
-          <span class="navigation__item">Create</span>
-        </a>
-        <a href="profile.html" class="navigation__link">
-          <i class="fas fa-user navigation__icon"></i><br />
-          <span class="navigation__item">Profile</span>
-        </a>
+      <nav class="navigation"> 
+          <i data-js="bt-home" class="fas fa-home"></i>
+          <i data-js="bt-bookmark" class="fas fa-bookmark"></i>
+          <i data-js="bt-create" class="fas fa-pen"></i>
+          <i data-js="bt-profil" class="fas fa-user"></i>
       </nav>
     </footer>
   </body>

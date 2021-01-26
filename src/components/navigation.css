@@ -1,34 +1,13 @@
 .navigation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 23px;
   position: fixed;
   bottom: 0;
   width: 100%;
   max-width: 375px;
-  padding: 20px 0 10px;
+  padding: 20px 0 15px;
+  font-size: 30px;
   background-color: var(--color-fireopal);
-}
-
-.navigation__icon {
-  display: block;
-  font-size: 23px;
-}
-
-.navigation__item {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.navigation__link {
-  text-align: center;
-  color: var(--color-honeydew-light);
-  text-decoration: none;
-}
-
-.navigation__link-aktive {
-  text-align: center;
-  color: var(--color-independence-dark);
-  text-decoration: none;
+  color: var(--color-eggshell);
 }
