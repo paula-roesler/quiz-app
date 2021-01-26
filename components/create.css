@@ -1,5 +1,5 @@
 .create__form {
-  margin: 30px;
+  margin: 30px 0;
   font-size: 20px;
   letter-spacing: 0.01em;
 }
@@ -14,7 +14,12 @@
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
-  border: 3px solid rgb(215, 215, 215);
+  padding: 10px;
+  border: 2px solid rgb(215, 215, 215, 0.1);
+  resize: none;
+  box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
+  -webkit-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
+  -moz-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
 }
 
 .create__form__submit {
@@ -24,8 +29,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-orange);
-  color: ivory;
-  border: none;
+  background-color: transparent;
+  color: var(--color-orange-light);
+  border: 2px solid var(--color-orange-light);
   letter-spacing: 0.06em;
+  border-radius: 4px;
 }
