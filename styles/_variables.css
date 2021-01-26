@@ -7,3 +7,9 @@
   --color-independence: #474056;
   --color-independence-dark: #2d253f;
 }
+
+.dhd {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

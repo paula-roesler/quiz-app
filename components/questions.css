@@ -45,9 +45,12 @@
   padding-left: 10px;
   background-color: var(--color-independence);
 }
+.questions__answerbutton {
+  background-color: blue;
+}
 
-summary::marker {
-  color: var(--color-honeydew);
+summary::-webkit-details-marker {
+  display: none;
 }
 
 summary {
