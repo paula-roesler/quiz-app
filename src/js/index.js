@@ -10,6 +10,8 @@ const bt_bookmark = document.querySelector('[data-js="bt_bookmark"]')
 const bt_create = document.querySelector('[data-js="bt_create"]')
 const bt_profil = document.querySelector('[data-js="bt_profil"]')
 
+const page_title = document.querySelector('[data-js="page_title"]')
+
 bt_home.addEventListener('click', () => {
   sec_home.classList.remove('hidden')
   sec_bookmarks.classList.add('hidden')
@@ -20,6 +22,8 @@ bt_home.addEventListener('click', () => {
   bt_bookmark.classList.remove('active')
   bt_create.classList.remove('active')
   bt_profil.classList.remove('active')
+
+  page_title.textContent = 'Home'
 })
 
 bt_bookmark.addEventListener('click', () => {
@@ -32,6 +36,8 @@ bt_bookmark.addEventListener('click', () => {
   bt_bookmark.classList.add('active')
   bt_create.classList.remove('active')
   bt_profil.classList.remove('active')
+
+  page_title.textContent = 'Bookmarks'
 })
 
 bt_create.addEventListener('click', () => {
@@ -44,6 +50,8 @@ bt_create.addEventListener('click', () => {
   bt_bookmark.classList.remove('active')
   bt_create.classList.add('active')
   bt_profil.classList.remove('active')
+
+  page_title.textContent = 'Create'
 })
 
 bt_profil.addEventListener('click', () => {
@@ -56,4 +64,6 @@ bt_profil.addEventListener('click', () => {
   bt_bookmark.classList.remove('active')
   bt_create.classList.remove('active')
   bt_profil.classList.add('active')
+
+  page_title.textContent = 'Profile'
 })
