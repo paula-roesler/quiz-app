@@ -11,3 +11,7 @@
   background-color: var(--color-fireopal);
   color: var(--color-eggshell);
 }
+
+.active {
+  color: var(--color-independence-dark);
+}

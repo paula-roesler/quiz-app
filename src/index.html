@@ -13,12 +13,13 @@
       rel="stylesheet"
     />
   </head>
+
   <body class="app-grid">
-    <section hidden data-js="home" class="home">
+    <section data-js="sec_home" class="hidden home app-grid">
       <header class="app-title__header">
         <h1 class="app-title__title">Quizzz</h1>
       </header>
-      <main class="app-grid__main">
+      <main>
         <section class="questions__card">
           <button class="questions__bookmark"></button>
           <h2 class="questions__question">
@@ -74,18 +75,18 @@
         </section>
       </main>
     </section>
-    <section hidden data-js="bookmarks"  class="bookmarks">
+    <section data-js="sec_bookmarks" class="hidden bookmarks app-grid">
       <header class="app-title__header">
-        <h1 class="app-title__title">Bookmark</h1>
+        <h1 class="app-title__title">Bookmarks</h1>
       </header>
-      <main class="app-grid__main">
+      <main>
         <section class="questions__card">
           <button class="questions__bookmark"></button>
           <h2 class="questions__question">
             What is the population of New Orleans?
           </h2>
           <details>
-            <summary></summary>
+            <summary>Show answer</summary>
             According to 2010 Census Bureau estimates, New Orleans' population
             is made up of approximately 343,829 residents.
           </details>
@@ -102,7 +103,7 @@
             What is the population of New Orleans?
           </h2>
           <details>
-            <summary></summary>
+            <summary>Show answer</summary>
             According to 2010 Census Bureau estimates, New Orleans' population
             is made up of approximately 343,829 residents.
           </details>
@@ -115,14 +116,14 @@
         </section>
       </main>
     </section>
-    <section hidden data-js="create"  class="create">
+    <section data-js="sec_create" class="hidden create app-grid">
       <header class="app-title__header">
         <h1 class="app-title__title">Create</h1>
       </header>
       <main class="app-grid__main">
         <form action="" class="create__form">
-          <label for="question" class="create__form__question">
-            Your Question goes here:</label
+          <label for="question" class="create__form__question"
+            >Your Question goes here:</label
           >
           <textarea
             name=""
@@ -132,9 +133,9 @@
             class="create__form__input"
             required="required"
           ></textarea>
-          <label for="answer" class="create__form__question">
-            Your answer goes here:</label
-          >
+          <label for="answer" class="create__form__question"
+            >Your answer goes here:
+          </label>
           <textarea
             name=""
             id="answer"
@@ -143,32 +144,28 @@
             class="create__form__input"
             required="required"
           ></textarea>
-          <label for="tags" class="create__form__question">
-            Insert your tags (separated with comma) here:</label
+          <label for="tags" class="create__form__question"
+            >Insert your tags (separated with comma) here:</label
           >
-          <input
-            name=""
-            id="tags"
-            class="create__form__input"
-          ></input>
+          <input name="" id="tags" class="create__form__input" />
           <button class="create__form__submit">Submit</button>
         </form>
       </main>
     </section>
-    <section hidden data-js="profil"  class="profil">
+    <section data-js="sec_profil" class="hidden profil app-grid">
       <header class="app-title__header">
-        <h1 class="app-title__title">Quizzz</h1>
+        <h1 class="app-title__title">Profile</h1>
       </header>
       <main>
         <section class="profile__about">
-          <img class="profile__pic" src="../images/profilpic.jpg" alt="" />
+          <img class="profile__pic" src="./assets/profilpic.jpg" alt="" />
           <h2 class="profile__name">My Name</h2>
         </section>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aperiam
           debitis doloribus quas esse sapiente fugit, commodi id enim explicabo
-          accusantium veritatis unde quia sint sequi beatae asperiores consequatur
-          nostrum!
+          accusantium veritatis unde quia sint sequi beatae asperiores
+          consequatur nostrum!
         </p>
         <h3>My Skills</h3>
         <ul class="profile__tags">
@@ -182,11 +179,11 @@
       </main>
     </section>
     <footer class="app-grid__footer">
-      <nav class="navigation"> 
-          <i data-js="bt-home" class="fas fa-home"></i>
-          <i data-js="bt-bookmark" class="fas fa-bookmark"></i>
-          <i data-js="bt-create" class="fas fa-pen"></i>
-          <i data-js="bt-profil" class="fas fa-user"></i>
+      <nav class="navigation">
+        <i data-js="bt_home" class="fas fa-home"></i>
+        <i data-js="bt_bookmark" class="fas fa-bookmark"></i>
+        <i data-js="bt_create" class="fas fa-pen"></i>
+        <i data-js="bt_profil" class="fas fa-user"></i>
       </nav>
     </footer>
   </body>

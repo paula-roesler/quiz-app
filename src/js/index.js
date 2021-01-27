@@ -1,71 +1,59 @@
-console.clear()
+console.log('Hallo')
 
-// sections:
-// data-js="home"
-// data-js="bookmark"
-// data-js="create"
-// data-js="profil"
+const sec_home = document.querySelector('[data-js="sec_home"]')
+const sec_bookmarks = document.querySelector('[data-js="sec_bookmarks"]')
+const sec_create = document.querySelector('[data-js="sec_create"]')
+const sec_profil = document.querySelector('[data-js="sec_profil"]')
 
-// classes:
-// class="navigation"
+const bt_home = document.querySelector('[data-js="bt_home"]')
+const bt_bookmark = document.querySelector('[data-js="bt_bookmark"]')
+const bt_create = document.querySelector('[data-js="bt_create"]')
+const bt_profil = document.querySelector('[data-js="bt_profil"]')
 
-// Buttons:
-// fa-home fa-bookmark fa-pen fa-user
+bt_home.addEventListener('click', () => {
+  sec_home.classList.remove('hidden')
+  sec_bookmarks.classList.add('hidden')
+  sec_create.classList.add('hidden')
+  sec_profil.classList.add('hidden')
 
-const sectionHome = document.querySelector('[data-js="home"]')
-const sectionBookmark = document.querySelector('[data-js="bookmark"]')
-const sectionCreate = document.querySelector('[data-js="create"]')
-const sectionProfil = document.querySelector('[data-js="profil"]')
-
-const buttonHome = document.querySelector('[data-js="bt-home"]')
-const buttonBookmark = document.querySelector('[data-js="bt-bookmark"]')
-const buttonCreate = document.querySelector('[data-js="bt-create"]')
-const buttonProfil = document.querySelector('[data-js="bt-profil"]')
-
-buttonHome.addEventListener('click', () => {
-  sectionHome.classList.remove('hidden')
-  sectionBookmark.classList.add('hidden')
-  sectionCreate.classList.add('hidden')
-  sectionProfil.classList.add('hidden')
-
-  buttonHome.classList.remove('hidden')
-  buttonBookmark.classList.add('hidden')
-  buttonCreate.classList.add('hidden')
-  buttonProfil.classList.add('hidden')
+  bt_home.classList.add('active')
+  bt_bookmark.classList.remove('active')
+  bt_create.classList.remove('active')
+  bt_profil.classList.remove('active')
 })
 
-buttonBookmark.addEventListener('click', () => {
-  sectionHome.classList.add('hidden')
-  sectionBookmark.classList.remove('hidden')
-  sectionCreate.classList.add('hidden')
-  sectionProfil.classList.add('hidden')
+bt_bookmark.addEventListener('click', () => {
+  sec_home.classList.add('hidden')
+  sec_bookmarks.classList.remove('hidden')
+  sec_create.classList.add('hidden')
+  sec_profil.classList.add('hidden')
 
-  buttonHome.classList.add('hidden')
-  buttonBookmark.classList.remove('hidden')
-  buttonCreate.classList.add('hidden')
-  buttonProfil.classList.add('hidden')
+  bt_home.classList.remove('active')
+  bt_bookmark.classList.add('active')
+  bt_create.classList.remove('active')
+  bt_profil.classList.remove('active')
 })
 
-buttonCreate.addEventListener('click', () => {
-  sectionHome.classList.add('hidden')
-  sectionBookmark.classList.add('hidden')
-  sectionCreate.classList.remove('hidden')
-  sectionProfil.classList.add('hidden')
+bt_create.addEventListener('click', () => {
+  sec_home.classList.add('hidden')
+  sec_bookmarks.classList.add('hidden')
+  sec_create.classList.remove('hidden')
+  sec_profil.classList.add('hidden')
 
-  buttonHome.classList.add('hidden')
-  buttonBookmark.classList.readd('hidden')
-  buttonCreate.classList.remove('hidden')
-  buttonProfil.classList.add('hidden')
+  bt_home.classList.remove('active')
+  bt_bookmark.classList.remove('active')
+  bt_create.classList.add('active')
+  bt_profil.classList.remove('active')
 })
 
-buttonProfil.addEventListener('click', () => {
-  sectionHome.classList.add('hidden')
-  sectionBookmark.classList.add('hidden')
-  sectionCreate.classList.add('hidden')
-  sectionProfil.classList.remove('hidden')
+bt_profil.addEventListener('click', () => {
+  sec_home.classList.add('hidden')
+  sec_bookmarks.classList.add('hidden')
+  sec_create.classList.add('hidden')
+  sec_profil.classList.remove('hidden')
 
-  buttonHome.classList.add('hidden')
-  buttonBookmark.classList.readd('hidden')
-  buttonCreate.classList.add('hidden')
-  buttonProfil.classList.remove('hidden')
+  bt_home.classList.remove('active')
+  bt_bookmark.classList.remove('active')
+  bt_create.classList.remove('active')
+  bt_profil.classList.add('active')
 })
