@@ -9,7 +9,6 @@
 .profile__pic {
   width: 90%;
   margin: auto;
-  border: 2px solid;
   border-radius: 50%;
   box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
   -webkit-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
@@ -33,16 +32,13 @@
 .profile__logout_button {
   width: 50%;
   height: 50px;
-  margin: auto;
+  margin: 10px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-orange);
-  color: ivory;
-  border: none;
+  background-color: transparent;
+  color: var(--color-independence);
+  border: 2px solid var(--color-independence);
   letter-spacing: 0.06em;
-  border-radius: 3px;
-  box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
-  -webkit-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
-  -moz-box-shadow: -1px 5px 5px 0px rgba(217, 217, 215, 0.75);
+  border-radius: 4px;
 }
