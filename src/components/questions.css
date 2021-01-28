@@ -23,14 +23,14 @@
   background-color: transparent;
 }
 
-.questions__bookmark:active {
+.bookmarkIcon-active {
   height: 30px;
   overflow: hidden;
   position: absolute;
   width: 0;
   top: -6px;
   right: 17px;
-  border: 12px solid var(--color-fireopal);
+  border: 12px solid chartreuse;
   border-radius: 3px;
   border-bottom-color: transparent;
   padding: 0;
