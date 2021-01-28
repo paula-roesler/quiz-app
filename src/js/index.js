@@ -12,6 +12,8 @@ const bt_profil = document.querySelector('[data-js="bt_profil"]')
 
 const page_title = document.querySelector('[data-js="page_title"]')
 
+const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"]')
+
 bt_home.addEventListener('click', () => {
   sec_home.classList.remove('hidden')
   sec_bookmarks.classList.add('hidden')
@@ -66,4 +68,8 @@ bt_profil.addEventListener('click', () => {
   bt_profil.classList.add('active')
 
   page_title.textContent = 'Profile'
+})
+
+bookmarkIcon.addEventListener('click', () => {
+  bookmarkIcon.classList.toggle('bookmarkIcon-active')
 })
