@@ -71,5 +71,5 @@ bt_profil.addEventListener('click', () => {
 })
 
 bookmarkIcon.addEventListener('click', () => {
-  bookmarkIcon.className.toggle('bookmarkIcon-active')
+  bookmarkIcon.classList.toggle('bookmarkIcon-active')
 })
