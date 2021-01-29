@@ -14,6 +14,15 @@ const page_title = document.querySelector('[data-js="page_title"]')
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmarkIcon"]')
 const txtAnswer = document.querySelectorAll('[data-js="txt_answer"]')
 
+const createForm = document.querySelector('[data-js="createForm"]')
+const createQuestion = document.querySelector('[data-js="input_question"]')
+
+createForm.addEventListener('submit', event => {
+  event.preventDefault()
+  createForm.reset()
+  createQuestion.focus()
+})
+
 const questionCards = document.querySelectorAll('[data-js="question_card"]')
 
 questionCards.forEach(card => {
