@@ -11,11 +11,21 @@ const bt_create = document.querySelector('[data-js="bt_create"]')
 const bt_profil = document.querySelector('[data-js="bt_profil"]')
 
 const page_title = document.querySelector('[data-js="page_title"]')
-
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmarkIcon"]')
+const txtAnswer = document.querySelectorAll('[data-js="txt_answer"]')
+
+const questionCards = document.querySelectorAll('[data-js="question_card"]')
+
+questionCards.forEach(card => {
+  const button = card.querySelector('[data-js="bt_answer"]')
+  const answer = card.querySelector('[data-js="txt_answer"]')
+
+  button.addEventListener('click', () => {
+    answer.classList.toggle('hidden')
+  })
+})
 
 bt_home.classList.add('active')
-
 bt_home.addEventListener('click', () => {
   sec_home.classList.remove('hidden')
   sec_bookmarks.classList.add('hidden')
