@@ -30,7 +30,7 @@
   width: 0;
   top: -6px;
   right: 17px;
-  border: 12px solid chartreuse;
+  border: 12px solid var(--color-fireopal-light);
   border-radius: 3px;
   border-bottom-color: transparent;
   padding: 0;
