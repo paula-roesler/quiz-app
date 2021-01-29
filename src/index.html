@@ -18,19 +18,22 @@
       <h1 data-js="page_title" class="app-title__title">Quizzz</h1>
     </header>
     <main class="app-grid__main">
-      <section data-js="sec_home" class="hidden home">
+      <section data-js="sec_home" class="home">
         <section class="questions__card">
           <button data-js="bookmarkIcon" class="questions__bookmark"></button>
           <h2 class="questions__question">
             What is the population of New Orleans?
           </h2>
-          <details>
-            <summary role="button" class="questions__answerbutton">
-              Show Answer
-            </summary>
-            According to 2010 Census Bureau estimates, New Orleans' population
-            is made up of approximately 343,829 residents.
-          </details>
+          <button data-js="bt_answer" class="questions__answerbutton">
+            Show Answer
+          </button>
+          <p data-js="txt_answer" class="txt_answer hidden">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque
+            cupiditate iste, cumque voluptatibus nesciunt illum tenetur culpa
+            magnam fuga, nemo similique temporibus saepe vero explicabo
+            dignissimos sequi maxime consequuntur! Pariatur.
+          </p>
+
           <ul class="questions__tags">
             <li class="questions__tags__item">Geography</li>
             <li class="questions__tags__item">Cities</li>

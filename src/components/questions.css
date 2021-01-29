@@ -9,6 +9,7 @@
   -moz-box-shadow: 10px 10px 3px -6px rgba(217, 217, 215, 0.4);
 }
 
+/* BOOKMARKS */
 .questions__bookmark {
   height: 30px;
   overflow: hidden;
@@ -37,18 +38,26 @@
   background-color: transparent;
 }
 
-.questions__question::before {
-  content: 'Q: ';
-  padding-right: 10px;
-  color: var(--color-independence);
-}
-
+/* QUESTIONS */
 .questions__question {
   font-size: 16px;
   padding: 13% 10% 7% 10%;
   letter-spacing: 0.05em;
   color: var(--color-independence);
   background-color: var(--color-eggshell);
+}
+
+/* QUESTIONS – Answer Button */
+.questions__answerbutton {
+  padding: 10px;
+  width: 200px;
+  margin: auto;
+}
+
+.txt_answer {
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  color: var(--color-honeydew);
 }
 
 .questions__answer {
@@ -59,26 +68,8 @@
   padding-left: 10px;
   background-color: var(--color-independence);
 }
-.questions__answerbutton {
-}
 
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary {
-  font-family: 'Varela Round', sans-serif;
-  content: 'Show answer';
-  font-size: 16px;
-  color: var(--color-honeydew);
-}
-
-details {
-  padding: 3% 15% 3% 10%;
-  font-size: 16px;
-  color: var(--color-honeydew);
-}
-
+/* QUESTIONS – Tags */
 .questions__tags {
   margin: 0;
   padding: 3% 2% 0% 10%;

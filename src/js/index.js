@@ -14,6 +14,8 @@ const page_title = document.querySelector('[data-js="page_title"]')
 
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmarkIcon"]')
 
+bt_home.classList.add('active')
+
 bt_home.addEventListener('click', () => {
   sec_home.classList.remove('hidden')
   sec_bookmarks.classList.add('hidden')
