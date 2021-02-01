@@ -1,12 +1,10 @@
 @import './_base.css';
 @import './_variables.css';
-@import './utility.css';
 @import '../components/app-grid.css';
 @import '../components/app-title.css';
 @import '../components/profile.css';
 @import '../components/navigation.css';
 @import '../components/questions.css';
 @import '../components/create.css';
-
 @import './fonts/css/all.css';
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Varela+Round&display=swap');
