@@ -4,7 +4,7 @@
   "scripts": {
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
-    "test": "htmlhint && prettier --check . && npm run stylelint",
+    "test": "htmlhint && prettier --check . && npm run stylelint && eslint",
     "start": "snowpack dev",
     "build": "snowpack build",
     "storybook": "start-storybook -p 6006",
