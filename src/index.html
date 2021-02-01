@@ -18,7 +18,7 @@
       <h1 data-js="page_title" class="app-title__title">Quizzz</h1>
     </header>
     <main class="app-grid__main">
-      <section data-js="sec_home" class="home">
+      <section data-js="page" data-name="home" class="home">
         <section data-js="question_card" class="questions__card">
           <button data-js="bookmarkIcon" class="questions__bookmark"></button>
           <h2 class="questions__question">
@@ -89,7 +89,7 @@
           </ul>
         </section>
       </section>
-      <section data-js="sec_bookmarks" class="hidden bookmarks">
+      <section data-js="page" data-name="bookmark" class="hidden bookmarks">
         <section data-js="question_card" class="questions__card">
           <button data-js="bookmarkIcon" class="questions__bookmark"></button>
           <h2 class="questions__question">
@@ -138,7 +138,7 @@
           </ul>
         </section>
       </section>
-      <section data-js="sec_create" class="hidden create">
+      <section data-js="page" data-name="create" class="hidden create">
         <form data-js="createForm" action="" class="create__form">
           <label data-js="create__lable" class="create__form__question"
             >Your Question goes here:
@@ -182,7 +182,7 @@
           <button class="create__form__submit">Submit</button>
         </form>
       </section>
-      <section data-js="sec_profil" class="hidden profil">
+      <section data-js="page" data-name="settings" class="hidden profil">
         <section class="profile__about">
           <img class="profile__pic" src="./assets/profilpic.jpg" alt="" />
           <h2 class="profile__name">My Name</h2>
@@ -207,10 +207,10 @@
 
     <footer class="app-grid__footer">
       <nav class="navigation">
-        <i data-js="bt_home" class="fas fa-home"></i>
-        <i data-js="bt_bookmark" class="fas fa-bookmark"></i>
-        <i data-js="bt_create" class="fas fa-pen"></i>
-        <i data-js="bt_profil" class="fas fa-user"></i>
+        <i data-js="nav_bt" data-name="home" role="button" class="fas fa-home"></i>
+        <i data-js="nav_bt" data-name="bookmark" role="button" class="fas fa-bookmark"></i>
+        <i data-js="nav_bt" data-name="create" role="button" class="fas fa-pen"></i>
+        <i data-js="nav_bt" data-name="settings" role="button" class="fas fa-user"></i>
       </nav>
     </footer>
   </body>
