@@ -14,13 +14,27 @@ const page_title = document.querySelector('[data-js="page_title"]')
 const bookmarkIcons = document.querySelectorAll('[data-js="bookmarkIcon"]')
 const txtAnswer = document.querySelectorAll('[data-js="txt_answer"]')
 
+const lable = document.querySelectorAll('[data-js="create__lable"]')
+const counter = document.querySelector('[data-js="create__counter"]')
+const inputQuestion = document.querySelector('[data-js="create__input"]')
+const inputQuestions = document.querySelectorAll('[data-js="create__input"]')
+
+lable.forEach(lable => {
+  inputQuestion.addEventListener('input', () => {
+    const eingabe = inputQuestion.value.length
+    counter.innerHTML = 100 - eingabe + '/100'
+  })
+})
+
 const createForm = document.querySelector('[data-js="createForm"]')
-const createQuestion = document.querySelector('[data-js="input_question"]')
+const createQuestion = document.querySelector(
+  '[data-js="create__question-lable"]'
+)
 
 createForm.addEventListener('submit', event => {
   event.preventDefault()
   createForm.reset()
-  createQuestion.focus()
+  create__input_question.focus()
 })
 
 const questionCards = document.querySelectorAll('[data-js="question_card"]')
