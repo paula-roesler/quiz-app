@@ -140,34 +140,45 @@
       </section>
       <section data-js="sec_create" class="hidden create">
         <form data-js="createForm" action="" class="create__form">
-          <label class="create__form__question"
+          <label data-js="create__lable" class="create__form__question"
             >Your Question goes here:
+            <span data-js="create__counter" class="counter">100/100</span>
             <textarea
+            data-js="create__input"
+            class="create__form__input"
             name=""
-            data-js="input_question"
             cols="30"
             rows="10"
+            required="required"
+            maxlength="100"
+          ></textarea>
+          </label
+          >
+          <label data-js="create__lable" class="create__form__question"
+            >Your answer goes here:
+            <span data-js="counter" class="counter">100/100</span>
+          <textarea
+            data-js="create__input"
             class="create__form__input"
+            name=""
+            cols="30"
+            rows="10"
+            required="required"
+          ></textarea>
+        </label>
+          <label data-js="create__lable" class="create__form__question"
+            >Your tags (comma separated) goes here:
+            <span data-js="counter" class="counter">100/100</span>
+          <textarea
+            data-js="create__input"
+            class="create__form__input"
+            name=""
+            cols="30"
+            rows="10"
             required="required"
           ></textarea>
           </label
           >
-          
-          <label for="answer" class="create__form__question"
-            >Your answer goes here:
-          </label>
-          <textarea
-            name=""
-            id="answer"
-            cols="30"
-            rows="10"
-            class="create__form__input"
-            required="required"
-          ></textarea>
-          <label for="tags" class="create__form__question"
-            >Insert your tags (separated with comma) here:</label
-          >
-          <input name="" id="tags" class="create__form__input" />
           <button class="create__form__submit">Submit</button>
         </form>
       </section>
